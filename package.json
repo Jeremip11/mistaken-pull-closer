@@ -7,10 +7,13 @@
   "repository": "https://github.com/atom/mistaken-pull-closer.git",
   "scripts": {
     "start": "probot run ./index.js",
-    "test": "standard"
+    "test": "standard",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "probot": "^0.11.0"
+    "probot": "^0.11.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "^4.1.1",
@@ -22,5 +25,6 @@
   "engines": {
     "node": ">= 7.7.0",
     "npm": ">= 4.0.0"
-  }
+  },
+  "snyk": true
 }
