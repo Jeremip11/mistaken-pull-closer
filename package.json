@@ -10,7 +10,7 @@
     "test": "standard"
   },
   "dependencies": {
-    "probot": "^0.11.0"
+    "probot": "^3.0.3"
   },
   "devDependencies": {
     "chai": "^4.1.1",
